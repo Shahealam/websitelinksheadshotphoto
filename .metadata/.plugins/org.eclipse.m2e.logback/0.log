@@ -896,3 +896,27 @@ java.io.FileNotFoundException: /home/shahid/eclipse-workspace/headshotwebsite-li
 2025-10-14 15:55:41,275 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/shahid/eclipse-workspace/headshotwebsite-link/Broken_link_checker/src/test/resources
 2025-10-14 15:56:14,051 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/shahid/eclipse-workspace/headshotwebsite-link/Broken_link_checker/src/main/resources
 2025-10-14 15:56:14,053 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/shahid/eclipse-workspace/headshotwebsite-link/Broken_link_checker/src/test/resources
+2025-10-14 15:59:31,473 [Worker-24: Periodic workspace save.] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: /home/shahid/eclipse-workspace/headshotwebsite-link/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:185)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:127)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:116)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:1045)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.saving(ProjectRegistryManager.java:1196)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:453)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:269)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:272)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1226)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-10-14 16:01:57,494 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/shahid/eclipse-workspace/headshotwebsite-link/Broken_link_checker/src/main/resources
+2025-10-14 16:01:57,497 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/shahid/eclipse-workspace/headshotwebsite-link/Broken_link_checker/src/test/resources
+2025-10-14 16:03:25,542 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/shahid/eclipse-workspace/headshotwebsite-link/Broken_link_checker/src/main/resources
+2025-10-14 16:03:25,543 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/shahid/eclipse-workspace/headshotwebsite-link/Broken_link_checker/src/test/resources
+2025-10-14 16:03:38,810 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/shahid/eclipse-workspace/headshotwebsite-link/Broken_link_checker/src/main/resources
+2025-10-14 16:03:38,811 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/shahid/eclipse-workspace/headshotwebsite-link/Broken_link_checker/src/test/resources

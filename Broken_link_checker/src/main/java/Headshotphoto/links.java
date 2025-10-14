@@ -1,14 +1,10 @@
 package Headshotphoto;
 
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-//import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -16,21 +12,21 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class links {
-    
+
     WebDriver driver;
 
     @BeforeTest
     public void setUp() {
-        // Set up ChromeDriver using WebDriverManager
-        WebDriverManager.chromedriver().setup();  // Automatically downloads and sets up the chromedriver
+        // Setup ChromeDriver using WebDriverManager
+        WebDriverManager.chromedriver().setup();
 
-        // Create ChromeOptions and set headless mode
+        // Configure Chrome options
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");  // Enable headless mode
-        options.addArguments("--disable-gpu");  // Disable GPU acceleration (optional)
-        options.addArguments("--window-size=1920x1080");  // Set the window size (required for headless mode)
+        options.addArguments("--headless");  // Run in headless mode
+        options.addArguments("--disable-gpu");
+        options.addArguments("--window-size=1920,1080");
 
-        // Initialize WebDriver with the headless options
+        // Initialize driver
         driver = new ChromeDriver(options);
     }
 
@@ -38,67 +34,47 @@ public class links {
     public void testHomePage() {
         // Open Home page
         driver.get("https://www.headshotphoto.io/");
-        
-        // Verify page title (Example: Home page title)
-        String pageTitle = driver.getTitle();
-        Assert.assertEquals(pageTitle, "Expected Home Page Title");
 
-        // Additional checks like verifying elements
-        WebElement someElement = driver.findElement(By.className("max-h-10 w-auto"));
-        Assert.assertTrue(someElement.isDisplayed());
+        // Verify page title (replace with actual title)
+        String pageTitle = driver.getTitle();
+        Assert.assertEquals(pageTitle, "Headshot Photo — Professional Photography Services"); // Example
+
+        // Verify element (use CSS selector if multiple classes)
+        WebElement logo = driver.findElement(By.cssSelector(".max-h-10.w-auto"));
+        Assert.assertTrue(logo.isDisplayed(), "Logo is not displayed on Home Page");
     }
 
-    @Test(enabled=false)
+    @Test(priority = 2, enabled = false)
     public void testAboutPage() {
-        // Open About Us page
         driver.get("https://www.example.com/about");
-
-        // Verify About page title
         String pageTitle = driver.getTitle();
-        Assert.assertEquals(pageTitle, "Expected About Page Title");
-
-        // Additional checks like verifying elements
+        Assert.assertEquals(pageTitle, "About Us"); // Replace with actual title
         WebElement aboutSection = driver.findElement(By.id("aboutSectionId"));
         Assert.assertTrue(aboutSection.isDisplayed());
     }
 
-    @Test(enabled=false)
+    @Test(priority = 3, enabled = false)
     public void testContactPage() {
-        // Open Contact Us page
         driver.get("https://www.example.com/contact");
-
-        // Verify Contact page title
         String pageTitle = driver.getTitle();
-        Assert.assertEquals(pageTitle, "Expected Contact Page Title");
-
-        // Additional checks like verifying elements
+        Assert.assertEquals(pageTitle, "Contact Us"); // Replace with actual title
         WebElement contactForm = driver.findElement(By.id("contactForm"));
         Assert.assertTrue(contactForm.isDisplayed());
     }
 
-    @Test(enabled=false)
+    @Test(priority = 4, enabled = false)
     public void testServicesPage() {
-        // Open Services page
         driver.get("https://www.example.com/services");
-
-        // Verify Services page title
         String pageTitle = driver.getTitle();
-        Assert.assertEquals(pageTitle, "Expected Services Page Title");
-
-        // Additional checks like verifying elements
+        Assert.assertEquals(pageTitle, "Our Services"); // Replace with actual title
         WebElement servicesList = driver.findElement(By.id("servicesList"));
         Assert.assertTrue(servicesList.isDisplayed());
     }
 
     @AfterTest
     public void tearDown() {
-        // Close the browser
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }
-
-
-
-
-
-
