@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-14T23:48:33 IST" name="Headshotphoto.Test1" finished-at="2025-10-14T23:48:47 IST" duration-ms="13729">
+  <suite started-at="2025-10-15T11:20:16 IST" name="Command line suite" finished-at="2025-10-15T11:20:21 IST" duration-ms="4544">
     <groups>
     </groups>
-    <test started-at="2025-10-14T23:48:33 IST" name="Command line test" finished-at="2025-10-14T23:48:47 IST" duration-ms="13729">
+    <test started-at="2025-10-15T11:20:16 IST" name="Command line test" finished-at="2025-10-15T11:20:21 IST" duration-ms="4544">
       <class name="Headshotphoto.Test1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Headshotphoto.Test1@31206beb]" started-at="2025-10-14T23:48:33 IST" name="setUp" finished-at="2025-10-14T23:48:34 IST" duration-ms="706" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Headshotphoto.Test1@23bb8443]" started-at="2025-10-15T11:20:16 IST" name="setUp" finished-at="2025-10-15T11:20:17 IST" duration-ms="1233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHomePage()[pri:1, instance:Headshotphoto.Test1@31206beb]" started-at="2025-10-14T23:48:34 IST" name="testHomePage" finished-at="2025-10-14T23:48:47 IST" duration-ms="12930" status="PASS">
+        <test-method signature="testHomePage()[pri:1, instance:Headshotphoto.Test1@23bb8443]" started-at="2025-10-15T11:20:17 IST" name="testHomePage" finished-at="2025-10-15T11:20:21 IST" duration-ms="3166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Headshotphoto.Test1@31206beb]" started-at="2025-10-14T23:48:47 IST" name="tearDown" finished-at="2025-10-14T23:48:47 IST" duration-ms="77" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Headshotphoto.Test1@23bb8443]" started-at="2025-10-15T11:20:21 IST" name="tearDown" finished-at="2025-10-15T11:20:21 IST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Headshotphoto.Test1 -->
     </test> <!-- Command line test -->
-  </suite> <!-- Headshotphoto.Test1 -->
+  </suite> <!-- Command line suite -->
 </testng-results>

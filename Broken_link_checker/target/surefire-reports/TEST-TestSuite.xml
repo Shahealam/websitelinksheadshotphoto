@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="Headshotphoto.Test1" time="12.93" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="TestSuite" time="3.167" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.16+8-Ubuntu-0ubuntu122.04.1"/>
@@ -56,5 +56,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="Headshotphoto.Test1" name="testHomePage" time="12.93"/>
+  <testcase classname="Headshotphoto.Test1" name="testHomePage" time="3.167"/>
 </testsuite>
