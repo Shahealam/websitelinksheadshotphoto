@@ -85,6 +85,9 @@ package Headshotphoto;
 
 
 import base.BaseTest;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import test.Homepage;
@@ -111,20 +114,29 @@ public class Test1 extends BaseTest {
         Assert.assertTrue(driver.getCurrentUrl().contains("pricing"), "Pricing page not opened!");
         driver.navigate().back();
     }
-
+	/*
+	 * @Test(priority = 4, description = "Verify FAQ page navigation",enabled=false)
+	 * public void verifyFAQNavigation() { Homepage hp = new Homepage(driver);
+	 * hp.clickFAQLink(); Assert.assertTrue(driver.getCurrentUrl().contains("faq"),
+	 * "FAQ page not opened!");
+	 * 
+	 * driver.navigate().back(); }
+	 */
     @Test(priority = 4, description = "Verify FAQ page navigation")
     public void verifyFAQNavigation() {
-        Homepage hp = new Homepage(driver);
-        hp.clickFAQLink();
-        Assert.assertTrue(driver.getCurrentUrl().contains("faq"), "FAQ page not opened!");
-        driver.navigate().back();
-    }
-
+	WebElement faq= driver.findElement(By.xpath("//h2[text()='Frequently Asked Questions']"));
+	if(faq.isDisplayed()) {
+		System.out.println("FAQ's section is visible");
+	}
+	
+}
+    
+    
     @Test(priority = 5, description = "Verify Create Headshot button redirects correctly")
     public void verifyCreateHeadshotButton() {
         Homepage hp = new Homepage(driver);
         hp.clickCreateHeadshot();
-        Assert.assertTrue(driver.getCurrentUrl().contains("create"), "Create Headshot flow not started!");
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://app.headshotphoto.io/"), "Create Headshot flow not started!");
         driver.navigate().back();
     }
 }

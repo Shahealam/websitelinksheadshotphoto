@@ -18,23 +18,23 @@ public class Homepage {
     }
 
     // Header elements
-    @FindBy(css = "img[alt='Headshot Photo']")
+    @FindBy(xpath = "(//img[@alt='Headshot Photo Logo'])[1]")
     WebElement logo;
 
-    @FindBy(linkText = "Pricing")
+    @FindBy(xpath = "(//a[@href='/pricing'])[1]")
     WebElement pricingLink;
 
-    @FindBy(linkText = "FAQ")
+    @FindBy(linkText = "Frequently Asked Questions")
     WebElement faqLink;
 
     @FindBy(linkText = "Reviews")
     WebElement reviewsLink;
 
-    @FindBy(css = "a[href*='create']")
+    @FindBy(xpath = "//a[@href='https://app.headshotphoto.io/' and contains(text(),'Headshot')]")
     WebElement createHeadshotButton;
 
     // Hero section
-    @FindBy(xpath = "//h1[contains(text(),'Professional Business Headshots')]")
+    @FindBy(xpath = "//h1[contains(text(),'#Best AI Headshots Generator for Professional Headshots')]")
     WebElement heroHeading;
 
     @FindBy(xpath = "//button[contains(text(),'Try Free Demo')]")

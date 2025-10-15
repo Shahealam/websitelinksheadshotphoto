@@ -7,11 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyFAQNavigation"/>
           <include name="verifyPricingNavigation"/>
-          <include name="verifyCreateHeadshotButton"/>
-          <include name="verifyHomePageTitleAndLogo"/>
-          <include name="verifyHeroSection"/>
         </methods>
       </class> <!-- Headshotphoto.Test1 -->
     </classes>
