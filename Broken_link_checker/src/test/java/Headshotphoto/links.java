@@ -1,4 +1,4 @@
-package Headshotphoto;
+/*package Headshotphoto;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -78,5 +78,5 @@ public class links {
         }
     }
 }
-
+*/
 
